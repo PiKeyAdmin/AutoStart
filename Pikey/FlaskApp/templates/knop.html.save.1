@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari /
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttonG {
+  background-color: black;
+  color: black;
+  border: 3px solid #000000;
+  border-radius: 8px;
+}
+.buttonG:hover {
+  background-color: #9400D3; / Dark Violet /
+  color: white;
+}
+.buttonM {
+  background-color: black;
+  color: black;
+  border: 3px solid #000000;
+  border-radius: 8px;
+}
+.buttonM:hover {
+  background-color: #FF1493; / Deep Pink */
+  color: white;
+}
+</style>
+</head>
+
+<body>
+    <font face="arial" >
+    <h1>Aansturing en monitoring</h1>
+    <p>Met behulp van onderstaande knoppen kun je de motoren aanzetten en de gegevens monitoren.<br></p>
+    </font>
+	<form action="http://localhost:3000">
+		<input type="submit" value="Go to Grafana Monitoring" /></form>
+	<form action
+    <button type="submit"id="script-button">
+	
+	onclick="location.href = '/runscript';" id="runscript" class="button buttonM"><font color="white">Motoren</font></button>
+
+    <p><font face="arial" ><br><br><strong>Grafana: </strong>Via deze knop zijn de grafieken van de CPU te zien.
+        Oftewel, het monitoren.<br><strong>Motoren: </strong>Met behulp van deze knop zijn de motoren van Pi-Key
+        aan te zetten, waardoor de vlaggetjes gaan draaien. Oftewel, aansturing.</font></p>
+</body>
+</html>
