@@ -3,8 +3,6 @@ import RPi.GPIO as GPIO
 import time
 import subprocess
 
-
-
 GPIO.setwarnings(False)
 
 # Set Broadcom mode so we can addres GPIO pins by numer.
